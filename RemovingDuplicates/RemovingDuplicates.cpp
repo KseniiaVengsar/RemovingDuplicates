@@ -4,19 +4,19 @@
 #include <iostream>
 #include <set>
 #include <vector>
-#include <functional>  // Для std::greater
+#include <functional>  // Р”Р»СЏ std::greater
 
 int main() {
 
     setlocale(LC_ALL, "RU");
 
     int n;
-    std::cout << "Введите количество элементов: ";
+    std::cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ: ";
     std::cin >> n;
 
-    std::set<int, std::greater<int>> uniqueNumbers;  // greater-сортировкa в порядке убывания
+    std::set<int, std::greater<int>> uniqueNumbers;  // greater-СЃРѕСЂС‚РёСЂРѕРІРєa РІ РїРѕСЂСЏРґРєРµ СѓР±С‹РІР°РЅРёСЏ
 
-    std::cout << "Введите числа: ";
+    std::cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Р°: ";
     for (int i = 0; i < n; ++i) {
         int num;
         std::cin >> num;
@@ -24,7 +24,7 @@ int main() {
     }
 
     
-    std::cout << "Результат: ";
+    std::cout << "Р РµР·СѓР»СЊС‚Р°С‚: ";
     for (int num : uniqueNumbers) {
         std::cout << num << " ";
     }
